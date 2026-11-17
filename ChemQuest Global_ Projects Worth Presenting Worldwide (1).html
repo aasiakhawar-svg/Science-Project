@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ChemQuest Global: Projects Worth Presenting Worldwide</title>
+<style>
+:root{--bg:#F3F8FF;--sf:#FFFFFF;--tx:#1b1b1f;--mu:#4a4a52;--bd:#d5dff0;--ink:#1b1b1f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#13161c;--sf:#1e222a;--tx:#f2f2f5;--mu:#b8bac4;--bd:#343945;--ink:#f2f2f5}}
+:root[data-theme="dark"]{--bg:#13161c;--sf:#1e222a;--tx:#f2f2f5;--mu:#b8bac4;--bd:#343945;--ink:#f2f2f5}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,Segoe UI,Arial,sans-serif;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 18px 40px}
+.eyebrow{font-weight:700;font-size:14px;color:var(--mu)}
+h1{font-size:clamp(30px,6vw,52px);line-height:1.08;margin:6px 0 10px}
+.lead{max-width:700px;color:var(--mu);margin:0 0 20px;font-size:17px}
+.nav{display:flex;gap:8px;margin:0 0 20px;flex-wrap:wrap}
+.nb{font:inherit;font-weight:800;background:var(--sf);color:var(--tx);border:2px solid var(--bd);border-radius:99px;padding:8px 18px;cursor:pointer}
+.nb[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.card{--ac:var(--a1);background:var(--sf);border:3px solid var(--bd);border-radius:20px;padding:0;text-align:left;cursor:pointer;color:var(--tx);font:inherit;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-3px);border-color:var(--ac)}
+.card[aria-pressed="true"]{border-color:var(--ac);box-shadow:0 0 0 3px var(--ac)}
+.band{background:var(--a1);padding:14px;display:flex;justify-content:center}
+.cb{padding:12px 14px 16px}
+.badge{font-size:12px;font-weight:800;color:var(--ac)}
+.cb b{display:block;font-size:18px;line-height:1.2;margin:2px 0 4px}
+.cb span{font-size:14px;color:var(--mu)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .card,:root:not([data-theme="light"]) .panel{--ac:var(--a2)}}
+:root[data-theme="dark"] .card,:root[data-theme="dark"] .panel{--ac:var(--a2)}
+.panel{--ac:var(--a1);margin-top:22px;background:var(--sf);border:3px solid var(--ac);border-radius:24px;overflow:hidden}
+.ph{background:var(--a1);color:#fff;padding:20px 22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.ph h2{margin:0;font-size:clamp(24px,4vw,34px);line-height:1.1}
+.ph p{margin:4px 0 0;font-size:16px}
+.tabs{display:flex;gap:6px;padding:12px 14px 0;flex-wrap:wrap;border-bottom:2px solid var(--bd)}
+.tab{font:inherit;font-weight:800;background:none;border:0;border-bottom:4px solid transparent;padding:10px 12px;cursor:pointer;color:var(--mu)}
+.tab[aria-selected="true"]{color:var(--ac);border-bottom-color:var(--ac)}
+.body{padding:20px 22px 24px}
+.body h3{margin:0 0 10px;font-size:19px;color:var(--ac)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.box{background:var(--bg);border:2px solid var(--bd);border-radius:16px;padding:16px 18px}
+.box ul,.box ol{margin:0;padding-left:20px}
+.box li{margin:0 0 8px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.chip{background:var(--bg);border:2px solid var(--ac);border-radius:99px;padding:3px 12px;font-size:14px;font-weight:700}
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.step{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border:2px solid var(--bd);border-radius:14px;padding:12px 14px;cursor:pointer;text-align:left;font:inherit;color:var(--tx);width:100%}
+.step .n{flex:none;width:32px;height:32px;border-radius:50%;background:var(--a1);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.step[aria-pressed="true"]{border-color:var(--ac)}
+.step[aria-pressed="true"] .n{background:var(--ink);color:var(--bg)}
+.step[aria-pressed="true"] .t{text-decoration:line-through;opacity:.7}
+.when{display:block;font-size:12px;font-weight:800;color:var(--ac)}
+.prog{height:10px;background:var(--bd);border-radius:99px;overflow:hidden;margin:0 0 14px}
+.prog i{display:block;height:100%;background:var(--ac);width:0;transition:width .2s}
+.hook{background:var(--a1);color:#fff;border-radius:16px;padding:16px 20px;font-size:19px;font-weight:700;margin:0 0 16px}
+.plat{background:var(--sf);border:3px solid var(--bd);border-radius:20px;padding:18px 20px;margin:0 0 16px}
+.plat h3{margin:0 0 4px;font-size:22px}
+.plat .tag{font-size:13px;font-weight:800;color:#0b5cad}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .plat .tag{color:#8cc4ff}}
+:root[data-theme="dark"] .plat .tag{color:#8cc4ff}
+.plat dl{display:grid;grid-template-columns:110px 1fr;gap:6px 14px;margin:12px 0 0;font-size:15px}
+.plat dt{font-weight:800}.plat dd{margin:0}
+.warn{background:var(--sf);border:3px solid #E8A21A;border-radius:16px;padding:14px 18px;margin:0 0 18px}
+.note{font-size:14px;color:var(--mu);margin-top:12px}
+.foot{margin-top:28px;text-align:center;font-weight:700;color:var(--mu)}
+a{color:#0b5cad;font-weight:700}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) a{color:#8cc4ff}}
+:root[data-theme="dark"] a{color:#8cc4ff}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="eyebrow">Pearson Edexcel IGCSE Chemistry (4CH1) | Students aged 14 to 16</div>
+<h1>ChemQuest Global</h1>
+<p class="lead">Six research-style chemistry projects with the wow factor, each with its concept, a week-by-week plan, a way to present it, and the international platforms where it fits.</p>
+<div class="nav"><button class="nb" id="n1" aria-pressed="true">1. Project ideas</button><button class="nb" id="n2" aria-pressed="false">2. Where to share worldwide</button></div>
+<div id="v1"><div class="grid" id="grid"></div><section class="panel" id="panel" aria-live="polite"></section></div>
+<div id="v2" style="display:none"></div>
+<div class="foot">Designed by Teacher Aasia Khawar</div>
+</main>
+<script>
+var IDEAS=[
+{id:1,a1:"#0B6E99",a2:"#6CCBF0",liq:"#3AA7D9",t:"Clean Water Challenge",s:"Environmental chemistry",
+ q:"Which low-cost filter removes the most cloudiness, chloride and hardness from polluted water?",
+ wow:"Dirty water in, clear water out, with test results to prove it.",
+ syl:"Tests for ions, separation methods, acids and alkalis, water treatment",
+ meta:["Teams of 2 to 3","6 weeks","Safety: low"],
+ concept:["Filtration removes solids, adsorption on charcoal traps dissolved colours and odours, and alum makes particles clump (coagulation).","Compare sand, charcoal, gravel and alum, alone and in layers, as a fair test.","Measure turbidity (a simple clarity tube), pH, chloride and hardness before and after."],
+ steps:[["Week 1","Pick a research question and write a hypothesis. Collect safe sample water (pond or tap water mixed with soil and salt)."],["Week 2","Build 4 filter designs in cut bottles and plan the fair test: same volume, same flow time."],["Week 3","Trial run. Record clarity, pH and chloride test results in a table before and after."],["Week 4","Repeat each test 3 times. Calculate averages and plot bar charts."],["Week 5","Evaluate: cost, sustainability and scalability for communities without clean water."],["Week 6","Build the display board and rehearse the 3-minute talk."]],
+ hook:"Could a bottle, sand and charcoal make dirty water safer for a village?",demo:"Live filter demo: pour murky water through a layered bottle and show the clear result next to the sample.",
+ fit:["sjwp","isef","genius"],needs:["Plastic bottles, sand, gravel, activated charcoal, cotton","Alum (teacher handled)","pH paper, chloride and hardness test kits","Clear measuring tubes","Goggles and aprons"]},
+{id:2,a1:"#2F7D32",a2:"#8EE192",liq:"#7CC96A",t:"Bioplastic Lab",s:"Organic chemistry, polymers",
+ q:"Which natural recipe makes the strongest bioplastic that breaks down fastest?",
+ wow:"Plastic made from kitchen ingredients that you can hold and test.",
+ syl:"Polymers, organic chemistry, crude oil and its products",
+ meta:["Teams of 2 to 3","6 weeks","Safety: low"],
+ concept:["Polymers are long chains of repeating units; starch is a natural polymer that forms a film when heated with a plasticiser such as glycerol.","Change one variable: starch type (potato, corn), glycerol amount or an added fibre.","Test thickness, strength (weights it can hold), water absorption and breakdown in soil."],
+ steps:[["Week 1","Research plastic pollution and write a question. Plan the recipe variables."],["Week 2","Make 4 recipes with a heated starch, water, glycerol and vinegar mix; dry the films."],["Week 3","Test strength by hanging weights and by stretching; measure thickness."],["Week 4","Test water absorption (mass gain) and soil burial for breakdown over weeks."],["Week 5","Compare results, find the best recipe and compare with ordinary plastic bags."],["Week 6","Prepare board and a sample table for people to touch and test."]],
+ hook:"Can the kitchen replace the oil industry in making plastic?",demo:"A tug-of-strength table: visitors pull samples and guess the winner before seeing your data.",
+ fit:["genius","isef"],needs:["Potato or corn starch, glycerol, vinegar, water","Hotplate, beakers, stirrers","Moulds (trays or foil)","Hanging masses, balance, ruler","Goggles and aprons"]},
+{id:3,a1:"#B03A8F",a2:"#FF9ADB",liq:"#D85BB3",t:"Spoilage Detector",s:"Indicators, acids and alkalis",
+ q:"Can a colour-changing indicator film show when milk or fish is going off?",
+ wow:"A label that changes colour to warn about spoiled food.",
+ syl:"Acids, alkalis, indicators, pH, rates of reaction",
+ meta:["Teams of 2 to 3","6 weeks","Safety: low"],
+ concept:["Red cabbage indicator changes colour as acidity changes; spoiling milk becomes more acidic as bacteria make lactic acid.","Mix indicator into a gelatin or agar film, then watch it change next to food stored at different temperatures.","Link colour changes to pH readings and the rate of spoilage."],
+ steps:[["Week 1","Make cabbage indicator and calibrate it with buffers or known pH solutions to build a colour scale."],["Week 2","Make indicator strips or agar films; test their colours across pH 2 to 12."],["Week 3","Store milk at 4, 20 and 30 degrees Celsius; record pH and indicator colour each day."],["Week 4","Plot pH against time and colour against pH; look for the safe-to-unsafe point."],["Week 5","Evaluate accuracy and compare with a pH meter or pH paper."],["Week 6","Create a prototype label and a poster with the story of food waste."]],
+ hook:"What if your milk carton could tell you when it was unsafe?",demo:"A colour ladder: strips from fresh to spoiled milk beside the pH scale.",
+ fit:["isef","genius"],needs:["Red cabbage, gelatin or agar","Milk samples, thermometers, incubating spots (fridge, room, warm place)","pH paper or pH meter","Petri dishes or small trays","Goggles and gloves"]},
+{id:4,a1:"#A8561B",a2:"#FFB27A",liq:"#C97A3A",t:"Rust Fighters",s:"Corrosion, reactivity",
+ q:"Which natural extract protects iron best from rusting in salty water?",
+ wow:"Plant extracts versus rust, with before and after nails.",
+ syl:"Rusting, reactivity series, oxidation and reduction",
+ meta:["Teams of 2 to 3","5 weeks","Safety: low"],
+ concept:["Iron rusts when it reacts with oxygen and water, and salt speeds it up.","Some plant extracts (tea, onion skin, turmeric) may form a protective film on the metal.","Measure the mass change of nails and compare with a control and a commercial coating."],
+ steps:[["Week 1","Choose extracts, prepare identical cleaned nails and a salt-water bath."],["Week 2","Coat or soak nails; set up a control, a paint coat and each extract in labelled cups."],["Week 3","Observe and photograph daily; score rust coverage on a clear scale."],["Week 4","Remove rust, dry and weigh nails to find mass loss; repeat three times."],["Week 5","Graph results, rank the extracts and discuss cost and safety."]],
+ hook:"Can tea beat rust?",demo:"A rusted versus protected nail display with a mass-loss bar chart.",
+ fit:["isef","genius"],needs:["Iron nails, salt","Tea, onion skin, turmeric extracts","Cups and labels, camera","Balance (0.01 g), drying tray","Goggles and gloves"]},
+{id:5,a1:"#6B3FD1",a2:"#C4AEFF",liq:"#F2B01E",t:"Power Cell Lab",s:"Electrochemistry",
+ q:"Which metal pairs and electrolytes make the best low-cost battery?",
+ wow:"A homemade battery that lights an LED.",
+ syl:"Reactivity series, electrolysis and cells, energy changes",
+ meta:["Teams of 2 to 3","6 weeks","Safety: low"],
+ concept:["A cell gives voltage when two different metals sit in an electrolyte; the more reactive metal gives up electrons.","Compare metal pairs (zinc, copper, magnesium, iron) and electrolytes (saltwater, vinegar, lemon juice).","Measure voltage and current, then link several cells in series to power an LED."],
+ steps:[["Week 1","Predict the best pair from the reactivity series and write your hypothesis."],["Week 2","Build a cell grid; measure voltage for each metal pair and electrolyte."],["Week 3","Measure current with a load and plot voltage over time to test how long cells last."],["Week 4","Build series cells to light an LED; compare the number of cells needed."],["Week 5","Evaluate against disposable batteries and discuss sustainability."],["Week 6","Create the board and a working demonstration."]],
+ hook:"Can a lemon power the future?",demo:"A live LED lit by your homemade cell stack, with a leaderboard of metal pairs.",
+ fit:["isef","genius"],needs:["Zinc, copper, magnesium, iron strips","Vinegar, salt, lemon juice","Multimeter, LEDs, wires and clips","Beakers or ice-cube trays","Goggles"]},
+{id:6,a1:"#0E8A7D",a2:"#6FE3D4",liq:"#38C2B0",t:"Antacid Analyst",s:"Quantitative chemistry, titration",
+ q:"Which antacid neutralises the most stomach acid per pound or rupee?",
+ wow:"A real analytical test used in labs, with a consumer verdict.",
+ syl:"Titration, moles and concentration calculations, acids and alkalis",
+ meta:["Teams of 2","6 weeks","Safety: medium"],
+ concept:["Antacids are bases that neutralise stomach acid (hydrochloric acid).","Add a known excess of dilute acid to a crushed tablet, then titrate the leftover acid with sodium hydroxide (a back titration).","Calculate acid neutralised per tablet, then cost per unit of acid neutralised."],
+ steps:[["Week 1","Learn titration technique with practice runs using teacher-supplied solutions."],["Week 2","Plan the fair test: same tablet mass, same acid volume, indicator chosen with the teacher."],["Week 3","Run back titrations for 3 antacid brands, repeating until results agree within 0.2 mL."],["Week 4","Calculate moles of acid neutralised per tablet and per gram."],["Week 5","Compare cost and discuss error sources and improvements."],["Week 6","Prepare the board and a results table; practise explaining the calculation simply."]],
+ hook:"Does the most expensive antacid actually work the best?",demo:"A mini titration with a colour change at the end and a ranking chart.",
+ fit:["isef"],needs:["Antacid tablets of different brands","Dilute hydrochloric acid and sodium hydroxide (teacher prepared)","Burettes, pipettes, conical flasks","Indicator (teacher selected)","Goggles, gloves and supervision"]}
+];
+var PLAT={
+isef:{n:"Regeneron ISEF",tag:"World’s largest pre-college science fair",
+ who:"Grades 9 to 12 or equivalent, and not 20 by 1 May before the fair. English board and abstract. Teams of up to 3.",
+ how:"You cannot apply directly. Win a place at a Society for Science affiliated fair. Find one at findafair.societyforscience.org.",
+ when:"ISEF 2027: 8 to 14 May, Los Angeles. Affiliated fairs must be held by 12 April 2027.",
+ rules:"Research must be an original investigation, at most 12 months of continuous work, and follow the ISEF International Rules. A simple demonstration is not an ISEF project."},
+sjwp:{n:"Stockholm Junior Water Prize",tag:"Youth award for water research",
+ who:"Ages 15 to 20, still in secondary school. Individuals or teams of up to 2.",
+ how:"Enter your country’s national competition through the national organiser. Winners go to the international final.",
+ when:"International final: World Water Week, Stockholm, August. Deadlines vary by country.",
+ rules:"The project must address a water challenge and use scientific methods with data analysis. International winner receives a US$15,000 scholarship."},
+genius:{n:"GENIUS Olympiad",tag:"International project competition (science and environment)",
+ who:"About ages 13 to 18, grades 9 to 12 or equivalent. Students under 17 need an adult chaperone.",
+ how:"Apply through the national competition in your country where one exists, or directly to GENIUS Olympiad if not. Check geniusolympiad.org for the 2027 process.",
+ when:"Dates and fees vary by year. Check the official site.",
+ rules:"Projects can be research papers or models. The same project can often also be entered in ISEF-affiliated fairs."},
+olymp:{n:"International Science Olympiads (IJSO, IChO)",tag:"Exam-based knowledge competitions",
+ who:"Different age limits for each Olympiad. These test knowledge, not projects.",
+ how:"Qualify through your national Olympiad. Each country sends about 4 to 6 students.",
+ when:"Annual, in different host countries. Check your national committee.",
+ rules:"Good extra step for students who enjoy problem solving alongside projects."}
+};
+var state={i:null,tab:"concept",done:{}};
+function flask(l,w){return '<svg width="'+w+'" height="'+Math.round(w*1.17)+'" viewBox="0 0 72 84" role="img" aria-label="Flask illustration"><path d="M26 6h20v22l18 40c3 7-1 12-8 12H16c-7 0-11-5-8-12l18-40z" fill="#fff"/><path d="M19 56h34l10 22c2 4 0 6-4 6H13c-4 0-6-2-4-6z" fill="'+l+'"/><circle cx="30" cy="48" r="4" fill="'+l+'"/><circle cx="42" cy="38" r="3" fill="'+l+'"/><rect x="22" y="2" width="28" height="8" rx="3" fill="#1b1b1f"/></svg>'}
+function li(a){return a.map(function(x){return "<li>"+x+"</li>"}).join("")}
+function renderGrid(){
+ document.getElementById("grid").innerHTML=IDEAS.map(function(d,k){
+  return '<button class="card" style="--a1:'+d.a1+';--a2:'+d.a2+'" aria-pressed="'+(state.i===k)+'" data-k="'+k+'"><div class="band">'+flask(d.liq,64)+'</div><div class="cb"><span class="badge">IDEA '+d.id+'</span><b>'+d.t+'</b><span>'+d.s+'</span></div></button>'}).join("");
+ Array.prototype.forEach.call(document.querySelectorAll(".card"),function(b){b.onclick=function(){state.i=+b.dataset.k;state.tab="concept";renderGrid();renderPanel(true)}})}
+function renderPanel(scroll){
+ var p=document.getElementById("panel");
+ if(state.i===null){p.style.display="none";return}
+ var d=IDEAS[state.i];p.style.display="block";p.style.setProperty("--a1",d.a1);p.style.setProperty("--a2",d.a2);
+ var tabs=[["concept","Concept"],["execute","Execution"],["present","Present it"],["needs","Requirements"]];
+ var h='<div class="ph">'+flask(d.liq,64)+'<div><h2>'+d.t+'</h2><p>'+d.q+'</p></div></div><div class="tabs" role="tablist">'+tabs.map(function(t){return '<button class="tab" role="tab" aria-selected="'+(state.tab===t[0])+'" data-t="'+t[0]+'">'+t[1]+'</button>'}).join("")+'</div><div class="body">';
+ if(state.tab==="concept"){h+='<div class="meta">'+d.meta.map(function(m){return '<span class="chip">'+m+'</span>'}).join("")+'</div><div class="two"><div class="box"><h3>The science</h3><ul>'+li(d.concept)+'</ul></div><div class="box"><h3>Why it grabs attention</h3><p style="margin:0 0 12px">'+d.wow+'</p><h3>Syllabus links</h3><p style="margin:0">'+d.syl+'</p></div></div><div class="box" style="margin-top:18px"><h3>Where this fits</h3><ul>'+d.fit.map(function(f){return '<li><b>'+PLAT[f].n+'</b>: '+PLAT[f].tag+'</li>'}).join("")+'</ul></div>'}
+ if(state.tab==="execute"){var done=d.steps.filter(function(s,k){return state.done[d.id+"-"+k]}).length;
+  h+='<h3>Plan ('+done+' of '+d.steps.length+' done)</h3><div class="prog"><i style="width:'+Math.round(done/d.steps.length*100)+'%"></i></div><ul class="tl">'+d.steps.map(function(s,k){return '<li><button class="step" aria-pressed="'+!!state.done[d.id+"-"+k]+'" data-s="'+k+'"><span class="n">'+(k+1)+'</span><span><span class="when">'+s[0]+'</span><span class="t">'+s[1]+'</span></span></button></li>'}).join("")+'</ul><p class="note">Tap a step to tick it off. Keep a lab notebook with dates, raw data and photos, as judges ask for it.</p>'}
+ if(state.tab==="present"){h+='<div class="hook">“'+d.hook+'”</div><div class="two"><div class="box"><h3>Wow demo</h3><p style="margin:0">'+d.demo+'</p></div><div class="box"><h3>Board layout</h3><ol><li>Title and research question</li><li>Hypothesis and background</li><li>Method with photos</li><li>Results: tables and graphs</li><li>Conclusion and evaluation</li><li>Real-world impact and next steps</li></ol></div></div><div class="box" style="margin-top:18px"><h3>The 3-minute talk</h3><ol><li>Hook (15 seconds): the question above</li><li>Method (45 seconds): what you changed and kept the same</li><li>Results (60 seconds): one clear graph</li><li>Meaning (45 seconds): why it matters</li><li>Questions (15 seconds): invite them in</li></ol></div>'}
+ if(state.tab==="needs"){h+='<div class="two"><div class="box"><h3>You will need</h3><ul>'+li(d.needs)+'</ul></div><div class="box"><h3>Safety and ethics</h3><ul><li>Written risk assessment approved by the teacher</li><li>Goggles for every team member</li><li>Strong chemicals handled by the teacher only</li><li>Use samples that are safe to handle; no real sewage or hazardous waste</li><li>Record every change to the method</li></ul></div></div>'}
+ h+='</div>';p.innerHTML=h;
+ Array.prototype.forEach.call(p.querySelectorAll(".tab"),function(b){b.onclick=function(){state.tab=b.dataset.t;renderPanel(false)}});
+ Array.prototype.forEach.call(p.querySelectorAll(".step"),function(b){b.onclick=function(){var key=d.id+"-"+b.dataset.s;state.done[key]=!state.done[key];renderPanel(false)}});
+ if(scroll){p.scrollIntoView({behavior:"smooth",block:"start"})}}
+function renderPlat(){
+ var h='<div class="warn"><b>Check first:</b> dates and rules change each year. Confirm on each official site before registering. Information below was checked in November 2026.</div>';
+ ["isef","sjwp","genius","olymp"].forEach(function(k){var p=PLAT[k];
+  h+='<section class="plat"><span class="tag">'+p.tag+'</span><h3>'+p.n+'</h3><dl><dt>Who can enter</dt><dd>'+p.who+'</dd><dt>How to get in</dt><dd>'+p.how+'</dd><dt>When</dt><dd>'+p.when+'</dd><dt>Good to know</dt><dd>'+p.rules+'</dd></dl></section>'});
+ h+='<div class="box"><h3 style="color:inherit">Presenting internationally: your path</h3><ol><li>Choose a project and run it as a genuine investigation with measured data.</li><li>Present first at a school fair, then an ISEF-affiliated or national fair.</li><li>Prepare an English abstract, board and 3-minute talk.</li><li>Keep your lab notebook and risk assessment ready for the judges.</li></ol></div>';
+ document.getElementById("v2").innerHTML=h}
+function show(v){document.getElementById("v1").style.display=v===1?"block":"none";document.getElementById("v2").style.display=v===2?"block":"none";document.getElementById("n1").setAttribute("aria-pressed",v===1);document.getElementById("n2").setAttribute("aria-pressed",v===2)}
+document.getElementById("n1").onclick=function(){show(1)};document.getElementById("n2").onclick=function(){show(2)};
+renderGrid();renderPanel(false);renderPlat();
+</script>
+</body>
+</html>
